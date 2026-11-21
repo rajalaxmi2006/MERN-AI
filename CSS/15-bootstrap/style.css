@@ -1,0 +1,20 @@
+.navbar span {
+  color: #faac15;
+  font-weight: bold;
+}
+
+.heading {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  width: 900px;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.card-container .btn {
+  width: 100%;
+}

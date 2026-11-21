@@ -1,0 +1,18 @@
+- `What type conversion means`
+- `Explicit vs implicit conversion`
+- `Number()`
+- `String()`
+- `Boolean()`
+- `parseInt()`
+- `parseFloat()`
+- `Number.isNaN()`
+- `Number.isFinite()`
+- `Type coercion`
+- `+ coercion behavior`
+- `-, \*, / coercion behavior`
+- `== vs ===`
+- `Truthy and falsy values`
+- `Boolean conversion`
+- `null vs undefined`
+- `Common coercion interview traps`
+- `How to validate CLI data`

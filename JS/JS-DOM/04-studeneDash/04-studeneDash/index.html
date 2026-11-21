@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Kariba Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Code <span class="logo">Kariba</span></h1>
+
+      <button id="themeBtn">
+        Light Theme
+        <i class="fa-regular fa-sun"></i>
+        <i class="fa-solid fa-sun"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="dashboard">
+        <h2>Student Management</h2>
+        <p>
+          Total Students:
+          <span id="totalStudents">0</span>
+        </p>
+
+            <form id="studentForm">
+
+                <input type="text"
+                id="studentName"
+                placeholder="Enter student name"
+                required
+                >
+
+                <input type="email"
+                id="studentEmail"
+                placeholder="Enter student email"
+                required
+                >
+
+                <button type="submit">Add student</button>
+
+            </form>
+
+            <input type="search" id="search" placeholder="Search students...">
+             
+            <ul id="studentList"></ul>
+      </section>
+    </main>
+
+     <footer>
+        <p id="status">Checking connection...</p>
+
+        <p id="date"></p>
+     </footer>
+  </body>
+</html>
+
+

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS Variable  */
+
+:root {
+  --bgBtn: #e8bb1c;
+  --p: 0.5rem;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background: linear-gradient(135deg, #d9cbe7, #31384c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.fa-solid:hover {
+  color: #e60f0f;
+}
+
+.content {
+  position: relative;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+.logo {
+  width: 150px;
+  object-fit: contain;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"] {
+  padding: var(--p);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+input[type="number"] {
+  padding: var(--p);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+button {
+  padding: var(--p);
+  background-color: var(--bgBtn);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #b59110;
+}

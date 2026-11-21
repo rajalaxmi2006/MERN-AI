@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Desktop Navbar  */
+
+.navbar {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: #111;
+}
+
+.logo {
+  color: #fff;
+
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-span {
+  color: #faac15;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Without transition  */
+.nav-links a:hover {
+  color: #faac15;
+}
+
+/* With transition  */
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: inline;
+}
+
+.close {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.hero {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 30px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.hero-btn {
+  padding: 12px 25px;
+  border: none;
+  background: #faac15;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-5px) scale(1.2);
+  background: #be820a;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #111;
+    padding: 20px;
+  }
+
+  /* Change ☰ to ✕ */
+
+  #menu-toggle:checked + .menu-btn .hamburger {
+    display: none;
+  }
+
+  #menu-toggle:checked + .menu-btn .close {
+    display: inline;
+  }
+}

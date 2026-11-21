@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-Selector</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: aqua;
+    }
+
+    h1 {
+      color: blueviolet;
+    }
+    p {
+      color: blue;
+    }
+
+    .heading {
+      background: #212121;
+    }
+
+    #first-div {
+      background-color: chartreuse;
+    }
+
+    input[type="text"] {
+      background-color: coral;
+      color: red;
+      border: none;
+      outline: none;
+    }
+    input[type="password"] {
+      background-color: cornflowerblue;
+      color: blueviolet;
+      border: none;
+      outline: none;
+    }
+
+    #first-div p {
+      background-color: darkgreen;
+      color: white;
+      border: 2px solid;
+    }
+
+    #first-div > p {
+      background-color: crimson;
+    }
+
+    #first-div > p + p {
+      background-color: dodgerblue;
+    }
+
+    #second-div > h3 + p {
+      background-color: maroon;
+    }
+
+    #second-div > h3 ~ p {
+      background-color: maroon;
+    }
+
+    button {
+      background-color: blueviolet;
+      color: aliceblue;
+    }
+
+    button:hover {
+      background-color: rgb(34, 1, 64);
+      cursor: pointer;
+    }
+    button:active {
+      background-color: rgb(149, 82, 212);
+    }
+
+    h1::first-letter {
+      color: chartreuse;
+      font-weight: bold;
+    }
+
+    #second-div > h3,
+    p {
+      color: hotpink;
+    }
+    
+  </style>
+
+  <body>
+    <h1 class="heading">Selectors in CSS</h1>
+
+    <div id="first-div">
+      <p>Lorem ipsum dolor sit met. Quo, rem!</p>
+      <p>I am also a p tag</p>
+      <div>
+        <p>This is not the direct child</p>
+      </div>
+    </div>
+    <hr />
+    <h2 class="heading">Lorem ipsum dolor sit met.</h2>
+    <hr />
+    <div id="second-div">
+      <h3 class="heading">H3 tag</h3>
+      <p>Para tag</p>
+      <p>Para tag</p>
+    </div>
+    <hr />
+    <div>
+      <input type="text" placeholder="Enter name" />
+      <input type="password" placeholder="Enter password" />
+    </div>
+    <hr />
+    <button>Hover me</button>
+  </body>
+</html>
